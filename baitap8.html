@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        input {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            color: #b61b1b
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var a = parseInt(prompt("khoảng bao nhiêu"))
+        var b = parseInt(prompt("khoảng bao nhiêu"))
+        var c = Math.floor(Math.random() * (b - a + 1)) + a;
+        var e = 0
+        var d
+        win = false;
+        while (e < 3 && !win) {
+            d = prompt("chọn số");
+            if (d == c) {
+                result = "Chúc mừng bạn"
+                win = true;
+            } else {
+                result = "Chúc bạn may mắn lần sau"
+                e++
+            }
+            alert(result)
+        }
+    </script>
+</body>
+
+</html>
